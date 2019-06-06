@@ -5,7 +5,7 @@
         <format property="time" pattern="yyyyMMddHHmm" />
     </tstamp>
     <!-- 需要改成自己本地的 Jmeter 目录-->
-    <property name="jmeter.home" value="E:\久其软件\自动化测试\apache-jmeter-5.0" />
+    <property name="jmeter.home" value="E:\久其软件\自动化测试\Jmeter\apache-jmeter-5.0" />
     <!-- jmeter生成jtl格式的结果报告的路径-->
     <!-- <property name="jmeter.result.jtl.dir" value="/usr/local/apache-jmeter-4.0/TestReport/testToken/jtl"/> -->
     <!-- <property name="jmeter.result.jtl.dir" value="/Users/jc/.jenkins/workspace/helloWorld/test_token/jtl" /> -->
@@ -36,7 +36,7 @@
         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
             <!-- 声明要运行的脚本。"*.jmx"指包含此目录下的所有jmeter脚本-->
-            <testplans dir="E:\久其软件\自动化测试\apache-jmeter-5.0\report\run" includes="*.jmx" />
+            <testplans dir="E:\久其软件\自动化测试\Jmeter\apache-jmeter-5.0\report\run" includes="*.jmx" />
             
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
         </jmeter>
