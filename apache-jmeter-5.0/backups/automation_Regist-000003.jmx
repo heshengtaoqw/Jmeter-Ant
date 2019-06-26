@@ -186,7 +186,7 @@ log.info(&quot;CSV文件行数： &quot; + rowCount);</stringProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </LoopController>
         <hashTree>
-          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="进入测试循环" enabled="false">
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="进入测试循环" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <stringProp name="TestPlan.comments">根据文件中的行数确定循环次数</stringProp>
             <stringProp name="LoopController.loops">${rowCount1}</stringProp>
