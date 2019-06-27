@@ -56,6 +56,11 @@
               <stringProp name="Argument.value">6998B405000000016817A5EB90EC52EF</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="filepath" elementType="Argument">
+              <stringProp name="Argument.name">filepath</stringProp>
+              <stringProp name="Argument.value">../testdata/</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -81,7 +86,7 @@
         </JDBCDataSource>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-          <stringProp name="filename">E:/久其软件/自动化测试/Jmeter/apache-jmeter-5.0/script/testdata/Login.csv</stringProp>
+          <stringProp name="filename">${filepath}/Login.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">testName,mobileNo,exp_bind,exp_verifycode,exp_login,exp_checkin</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
